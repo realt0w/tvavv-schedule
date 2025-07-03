@@ -1,0 +1,90 @@
+/* Variables de couleur basées sur le logo topvak-logo.png */
+:root {
+    --primary-color: #00509e; /* Bleu */
+    --secondary-color: #8dc63f; /* Vert */
+    --text-color: #333;
+    --light-gray: #f4f8fa;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de base pour la page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal centré */
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* En-tête avec logo et titres */
+header .logo {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #667;
+    margin-bottom: 3rem;
+}
+
+/* Liste des liens d'horaires */
+.schedule-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-list li {
+    margin-bottom: 1.5rem;
+}
+
+/* Style des cartes pour chaque lien */
+.schedule-list a {
+    display: block;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: var(--card-shadow);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Effet interactif au survol */
+.schedule-list a:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--secondary-color); /* Le vert du logo apparaît */
+}
+
+/* Pied de page */
+footer {
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    color: #999;
+}

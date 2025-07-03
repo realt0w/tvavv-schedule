@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #00509e; /* Blue from logo */
+    --secondary-color: #8dc63f; /* Green from logo */
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --highlight-color: #a8e6cf; /* A lighter green for highlight */
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0 10px;
+}
+
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.container-time {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container-current-time_label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.container-current-time_value {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.current-activity-description {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.container-activity-from-to {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.activity-time {
+    font-weight: bold;
+}
+
+#schedule-table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cell {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cell-time {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+tr.current-activity {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+}
+
+tr.current-activity .cell-time {
+    color: var(--primary-color);
+}
+
+/* Style pour le bouton de notification */
+#enable-notifications-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+#enable-notifications-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Classe pour cacher des éléments */
+.hidden {
+    display: none;
+}
