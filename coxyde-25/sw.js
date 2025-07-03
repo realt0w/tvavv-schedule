@@ -3,7 +3,7 @@
 const staticCacheName = 'site-static-v3';
 const dynamicCacheName = 'site-dynamic-v2';
 const assets = [
-  './', './index.html', './script.js', './style.css', './Vacances-vivantes.png'
+  './', './index.html', './script.js', './style.css', './Vacances-vivantes.png', './AppVV.png'
 ];
 
 self.addEventListener('install', evt => {

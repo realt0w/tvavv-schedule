@@ -1,7 +1,7 @@
 {
-    "name": "Topvakantie Schema",
+    "name": "Horaire Coxyde VV",
     "short_name": "Schema",
-    "description": "Top Vakantie ter duinen schema",
+    "description": "Vacances Vivantes Ter Duinen horaire",
     "scope": "./",
     "start_url": "./",
     "background_color": "#ffffff",
@@ -10,7 +10,7 @@
     "display_override": ["standalone"],
     "icons": [
         {
-            "src": "./topvak-logo.png",
+            "src": "./AppVV.png",
             "type": "image/png",
             "sizes": "700x700"
         }   
